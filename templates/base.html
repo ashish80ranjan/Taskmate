@@ -54,8 +54,8 @@
           </div>
         </div>
         {% if user.is_authenticated %}
-         <p class="text-white my-2"> {{user.username}}</p>
-          <a href="{% url 'logout' %}"><button class="btn btn-primary mx-3">Logout</button></a>
+         <p class="text-white my-2 mx-2"> {{user.username}}</p>
+          <a href="{% url 'logout' %}"><button class="btn btn-primary my-2 mx-3">Logout</button></a>
           
         {% else %}
         <a href="{% url 'login' %}"><button class="btn btn-primary mx-3">Login</button></a>
